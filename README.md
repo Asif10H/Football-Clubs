@@ -1,6 +1,6 @@
 # Football Clubs
 
-![Football Clubs Landing Page](///.jpg)<br/>
+![Football Clubs Landing Page](/components/photo/LandingPage.png)<br/>
 
- To view the live demo, visit:https://------.netlify.app/   
+ To view the live demo, visit:https://football-clubs-thesportsdb.netlify.app/   
 
