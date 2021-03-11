@@ -1,6 +1,10 @@
 import { faArrowLeft } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { FaFacebook, FaTwitter, FaInstagram, FaFirefox } from 'react-icons/fa';
+import {BiWorld} from 'react-icons/bi'; 
+import {FiFlag} from 'react-icons/fi'; 
+import {RiFootballLine} from 'react-icons/ri'; 
+import {CgGenderMale} from 'react-icons/cg';
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router';
 import { Link } from 'react-router-dom';
@@ -37,17 +41,17 @@ const TeamDetail = () => {
                 </div>
             </div>
             <div className="container bg-primary text-white rounded m-1">
-                <div className="row justify-content-between">
+                <div className="container row justify-content-between">
                     <div className="col-lg-4 col-md-6 col-sm-12">
-                        {playersTeam}
-                    </div>
-                    <div className="col-lg-4 col-md-6 col-sm-12">
-                        <h1 className="card-title">{strTeam}</h1>
-                        <h4 className="card-text">Founded: {intFormedYear}</h4>
-                        <h4 className="card-text">Country: {strCountry}</h4>
-                        <h4 className="card-text">Sport Type: Football</h4>
-                        <h4 className="card-text">Gender: {strGender}</h4>
+                        <h1 className="card-title">{strTeam}</h1> 
+                        <h4 className="card-text"> <BiWorld style={{ height: 25, width: 25 }} /> Founded: {intFormedYear}</h4>
+                        <h4 className="card-text"> <FiFlag style={{  height: 25, width: 25 }} /> Country: {strCountry}</h4>
+                        <h4 className="card-text"><RiFootballLine style={{ height: 25, width: 25 }} /> Sport Type: Football</h4>
+                        <h4 className="card-text"><CgGenderMale style={{  height: 40, width: 40 }} /> Gender: {strGender}</h4>
                         <Link className="btn btn-dark" to={"/home"}><FontAwesomeIcon icon={faArrowLeft} /> Back </Link>
+                    </div>
+                    <div className=" col-lg-4 col-md-6 col-sm-12">
+                        {playersTeam}
                     </div>
                 </div>
             </div>
