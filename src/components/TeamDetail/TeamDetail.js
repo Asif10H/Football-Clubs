@@ -28,10 +28,10 @@ const TeamDetail = () => {
     const gender = strGender;
     let playersTeam;
     if (gender === "Male") {
-        playersTeam = <img src={male} alt="football team" />
+        playersTeam = <img className="img-fluid" src={male} alt="football team" />
     }
     else {
-        playersTeam = <img src={female} alt="football team" />
+        playersTeam = <img className="img-fluid" src={female} alt="football team" />
     }
     return (
         <div className="container">
