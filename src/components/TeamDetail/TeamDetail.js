@@ -45,12 +45,12 @@ const TeamDetail = () => {
     }
     return (
         <div className="container">
-            <div className="container wrapper stadium-badge col-lg-4 col-md-6 col-sm-12 center">
+            <div className="container clubs-stadium stadium-badge col-lg-4 col-md-6 col-sm-12 center">
                 <div className="card bg-dark text-white img-responsive">
                     {clubsStadium}
                 </div>
                 <div>
-                    <img className="d-block center play" src={strTeamBadge} alt="Team Badge" />
+                    <img className="d-block center team-badge" src={strTeamBadge} alt="Team Badge" />
                 </div>
             </div>
             <div className="container bg-primary text-white rounded m-1">

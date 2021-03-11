@@ -1,10 +1,10 @@
-.wrapper {
+.clubs-stadium {
     position: relative;
     width: fit-content;
     height: fit-content;
   }
   
-  .play {
+  .team-badge {
     position: absolute;
     left: 50%;
     top: 50%;
